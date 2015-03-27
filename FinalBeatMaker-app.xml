@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<application xmlns="http://ns.adobe.com/air/application/3.2">
+  <id>RapBeatMaker</id>
+  <versionNumber>1.0.0</versionNumber>
+  <versionLabel/>
+  <filename>RBM</filename>
+  <description/>
+  <!-- To localize the description, use the following format for the description element.<description><text xml:lang="en">English App description goes here</text><text xml:lang="fr">French App description goes here</text><text xml:lang="ja">Japanese App description goes here</text></description>-->
+  <name>RBM</name>
+  <!-- To localize the name, use the following format for the name element.<name><text xml:lang="en">English App name goes here</text><text xml:lang="fr">French App name goes here</text><text xml:lang="ja">Japanese App name goes here</text></name>-->
+  <copyright/>
+  <initialWindow>
+    <content>FinalBeatMaker.swf</content>
+    <systemChrome>standard</systemChrome>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <fullScreen>true</fullScreen>
+    <aspectRatio>landscape</aspectRatio>
+    <renderMode>cpu</renderMode>
+    <autoOrients>false</autoOrients></initialWindow>
+  <icon>
+    <image36x36>Design/rsz_icon.png</image36x36>
+    <image48x48>Design/rsz_1icon.png</image48x48>
+    <image72x72>Design/icon.png</image72x72>
+  </icon>
+  <customUpdateUI>false</customUpdateUI>
+  <allowBrowserInvocation>false</allowBrowserInvocation>
+  <android>
+    <manifestAdditions>
+      <![CDATA[<manifest>
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+<uses-permission android:name="android.permission.CAMERA"/>
+<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+<uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+<uses-permission android:name="android.permission.WAKE_LOCK"/>
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+</manifest>]]>
+    </manifestAdditions>
+  </android>
+</application>
